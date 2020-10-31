@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  //   background-color: #f3f3;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.45);
+  background-color: rgba(255, 51, 255, 0.774);
+  padding-bottom: 50px;
+  width: 500px;
+  .date {
+    color: #fff;
+    padding: 20px;
+  }
+  .header {
+    h1 {
+      font-weight: 400;
+      padding-bottom: 20px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.currency-container {
+  padding: 20px;
+  .currecy-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input[type="text"] {
+      background-color: transparent;
+      color: #fff;
+      font-family: "Montserrat";
+      outline: none;
+      border: none;
+      font-size: 40pt;
+      width: 60%;
+      appearance: none;
+      border-bottom: 2px solid #fff;
+    }
+
+    #currency-one,
+    #currency-two {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: rgb(255, 255, 255);
+      appearance: none;
+      font-size: 15px;
+      width: 90px;
+      padding: 10px;
+    }
+    .select {
+      position: relative;
+      overflow: hidden;
+      &::after {
+        content: "\25BC";
+        position: absolute;
+        color: #ffffffde;
+        font-size: 15pt;
+        top: 0;
+        right: 0;
+        padding: 6px 30px;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.swap-rate-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+  font-weight: 400;
+  color: #fff;
+  font-size: 15pt;
+  height: 10vh;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 30px;
+  color: rgba(255, 51, 255, 0.774);
+  margin-left: 30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.123);
+  &:hover {
+    background-color: #fdf5f5;
+  }
+}
